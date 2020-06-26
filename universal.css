@@ -1,1 +1,24 @@
+#main {
+  background-color: rgb(83, 133, 183);
+  font-family: boldFont;
+  text-align: center;
+  margin: 0px auto;
+  display: block;
+}
 
+/* For different media queries */
+
+/* Mobile */
+@media only screen and (min-width: 30em) {
+  
+}
+
+/* Tablet (iPad Mini, e.g) */
+@media only screen and (min-width: 40em) {
+  
+}
+
+/* Normal */
+@media only screen and (min-width: 48em) {
+  
+}
