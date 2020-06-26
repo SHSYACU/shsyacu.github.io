@@ -6,6 +6,15 @@
   display: block;
 }
 
+#main img {
+  padding: 0px; 
+}
+
+#main h1 {
+  color: white;
+  font-size: 400%
+}
+
 .quote {
   animation: rotating_quote 10s infinite;
   font-size: 100%; 
