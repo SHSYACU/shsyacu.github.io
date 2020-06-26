@@ -16,6 +16,7 @@
 }
 
 #quote2 {
+  float: left;
   animation-delay: 5s;
 }
 
