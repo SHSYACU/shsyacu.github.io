@@ -6,3 +6,39 @@
   display: block;
 }
 
+.quote {
+  animation: rotating-quote 10s infinite;
+  font-size: 100%; 
+}
+
+.quoter {
+  font-style: italic;
+}
+
+#quote2 {
+  animation-delay: 5s;
+}
+
+@keyframes rotating_quote {
+  0% { font-size: 100%; opacity: 1; }
+  50% { font-size: 0; opacity: 0; }
+  100% { font-size: 100%; opacity: 1; }
+}
+
+/* For different media queries */
+
+/* Mobile */
+@media only screen and (min-width: 30em) {
+  
+}
+
+/* Tablet (iPad Mini, e.g) */
+@media only screen and (min-width: 40em) {
+  
+}
+
+/* Normal */
+@media only screen and (min-width: 48em) {
+  
+}
+
