@@ -1,16 +1,16 @@
 @font-face {
   font-family: normalFont;
-  src: "fonts/YACUFont.woff2";
+  src: url("fonts/YACUFont.woff2");
 }
 
 @font-face {
   font-family: boldFont;
-  src: "fonts/YACUFontBold.woff2";
+  src: url("fonts/YACUFontBold.woff2");
 }
 
 @font-face {
   font-family: lightFont;
-  src: "fonts/YACUFontLight.woff2";
+  src: url("fonts/YACUFontLight.woff2");
 }
 
 // initialize more with different formats to avoid conflict
