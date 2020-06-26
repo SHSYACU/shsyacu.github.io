@@ -20,19 +20,25 @@
   background-color: midnightblue;
 }
 
+.repeating_quote {
+  position: relative;
+  margin: 0px auto;
+  background-color: midnightblue;
+}
+
 .quote {
-  animation: rotating_quote 10s infinite;
+  animation: rotating_quote 10s ease-in-out alternate infinite;
 }
 
 #quote2 {
-  float: left;
   animation-delay: 5s;
 }
 
 @keyframes rotating_quote {
-  0% { image-size: 100%; opacity: 1; }
-  50% { image-size: 0; opacity: 0; }
-  100% { image-size: 100%; opacity: 1; }
+  0% { opacity: 1; }
+  45% { opacity: 1; }
+  55% { opacity: 0; }
+  100% { opacity: 0; }
 }
 
 /* For different media queries */
