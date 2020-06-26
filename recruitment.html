@@ -32,7 +32,7 @@
      </nav>
     </header>
     <content id="recruitment">
-      <form action="get" id="primary_form" onsubmit="openWindow();">
+      <form action="https://formspree.io/mzbjaedr" method="POST" id="primary_form" onsubmit="openWindow();">
         <fieldset>
           <legend>Join the SHS YACU Chapter!</legend>
           <br>
@@ -40,7 +40,7 @@
           <br>
           <input type="text" placeholder="LAST NAME" name="ln" required class="under_line"/>
           <br>
-          <input type="text" placeholder="EMAIL" name="email" required class="under_line" />
+          <input type="text" placeholder="EMAIL" name="_replyto" required class="under_line" />
           <br>
           Grade: 
           <select name="Grade" size="1" id="grade" required>
@@ -55,10 +55,11 @@
             <option value="above">College</option>
           </select>
           <div id="containerform">
-            <input type="submit" value="SUBMIT"> 
+            <input type="submit" value="Send"> 
             &nbsp; &nbsp;
             <input type="reset" value="RESET">
           </div>
+          <textarea name="message" id="formattoremove">Welcome to the YACU!</textarea>
         </fieldset>
       </form>
     </content>
