@@ -22,16 +22,19 @@
 
 .repeating_quote {
   position: relative;
+  height: 100%;
+  width: 100%;
   margin: 0px auto;
   background-color: midnightblue;
 }
 
 .quote {
-  animation: rotating_quote 10s ease-in-out alternate infinite;
+  position: absolute;
+  left: 0;
 }
 
-#quote2 {
-  animation-delay: 5s;
+#top {
+  animation: rotating_quote 10s ease-in-out alternate infinite;
 }
 
 @keyframes rotating_quote {
