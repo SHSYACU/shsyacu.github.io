@@ -7,7 +7,7 @@
 }
 
 .quote {
-  animation: rotating-quote 10s infinite;
+  animation: rotating_quote 10s infinite;
   font-size: 100%; 
 }
 
