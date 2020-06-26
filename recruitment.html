@@ -7,7 +7,15 @@
     <link rel="stylesheet" type="text/css" href="fonts.css" /> <!-- specifically for fonts -->
     <link rel="stylesheet" type="text/css" href="universal.css" /> <!-- universal (general) -->                                        
     <link rel="icon" type="image/png" href="images/favicon.png" /> <!-- favicon 16x16 -->
-    <script type="text/javascript"></script> <!-- In case we decide to add dynamic elements -->
+    <script type="text/javascript">
+      var $ = function(id){
+         return document.getElementById(id);
+      }
+      
+      function openWindow() {
+        window.open("confirmation.html");
+      }
+    </script> <!-- In case we decide to add dynamic elements -->
     <meta charset="utf-8" /> <!-- Don't forget, this page is going to be responsive, for media type 30em, 38em, 45em -->
   </head>
   <!-- Initialization ends -->
@@ -24,9 +32,33 @@
      </nav>
     </header>
     <content id="recruitment">
-      <form action="get">
+      <form action="get" id="primary_form" onsubmit="openWindow();">
         <fieldset>
           <legend>Join the SHS YACU Chapter!</legend>
+          <br>
+          <input type="text" placeholder="FIRST NAME" name="fn" required class="under_line"/>
+          <br>
+          <input type="text" placeholder="LAST NAME" name="ln" required class="under_line"/>
+          <br>
+          <input type="text" placeholder="EMAIL" name="email" required class="under_line" />
+          <br>
+          Grade: 
+          <select name="Grade" size="1" id="grade" required>
+            <option value="below">5 or Below</option>
+            <option value="six">6</option>
+            <option value="seven">7</option>
+            <option value="eight">8</option>
+            <option value="nine">9</option>
+            <option value="ten">10</option>
+            <option value="eleven">11</option>
+            <option value="twelve">12</option>
+            <option value="above">College</option>
+          </select>
+          <div id="containerform">
+            <input type="submit" value="SUBMIT"> 
+            &nbsp; &nbsp;
+            <input type="reset" value="RESET">
+          </div>
         </fieldset>
       </form>
     </content>
