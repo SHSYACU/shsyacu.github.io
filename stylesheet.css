@@ -15,6 +15,11 @@
   font-size: 400%
 }
 
+#our_mission {
+  font-family: normalFont;
+  background-color: midnightblue;
+}
+
 .quote {
   animation: rotating_quote 10s infinite;
   font-size: 100%; 
