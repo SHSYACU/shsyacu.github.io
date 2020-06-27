@@ -23,7 +23,14 @@ body {
 
 #our_mission {
   font-family: normalFont;
-  background-color: steelblue;
+  font-weight: none;
+  color: white;
+  background-color: midnightblue;
+}
+
+#about_us {
+  color: white;
+  background-color: aliceblue;
 }
 
 .repeating_quote {
