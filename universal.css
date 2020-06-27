@@ -34,6 +34,7 @@ header {
 @media only screen and (min-width: 48em) {
   #container {
     animation: background_fade_in 1s easein;
+    animation-iteration-count: 1;
   }
   
   header nav {
