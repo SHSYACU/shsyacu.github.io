@@ -5,7 +5,7 @@ body {
 }
 
 #main {
-  background-color: rgb(83, 133, 183);
+  background-color: darkslateblue;
   font-family: boldFont;
   text-align: center;
   margin: 0px auto;
@@ -23,7 +23,7 @@ body {
 
 #our_mission {
   font-family: normalFont;
-  background-color: midnightblue;
+  background-color: steelblue;
 }
 
 .repeating_quote {
