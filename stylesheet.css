@@ -32,11 +32,13 @@ body {
   font-weight: none;
   color: white;
   background-color: midnightblue;
+  padding: 2%;
 }
 
 #about_us {
   color: white;
   background-color: aliceblue;
+  padding: 2%;
 }
 
 .repeating_quote {
