@@ -1,4 +1,31 @@
+body {
+  font-family: normalFont;
+  background-color: steelblue;
+  margin: 0px auto;
+  text-align: center;
+  padding: 0px;
+  padding-left: 0.2%;
+  padding-right: 0.2%;
+}
+
 /* Header */
+.fixed {
+  position: fixed;
+}
+
+header nav {
+  list-style: none;
+  text-decoration: none;
+  background-color: black; 
+  opacity: 0.4;
+  padding: 5%;
+}
+
+#nav_bar li {
+  display: inline;
+  float: right;
+  padding-right: 0.5%;
+}
 
 /* For different media queries */
 
@@ -14,5 +41,16 @@
 
 /* Normal */
 @media only screen and (min-width: 48em) {
-  
+  @keyframes background_fade_in {
+    0% { opacity: 0; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+  }
+ 
+  /** Safari and Chrome **/
+  @-webkit-keyframes background_fade_in {
+    0% { opacity: 0; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+  }
 }
