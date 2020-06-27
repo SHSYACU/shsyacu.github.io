@@ -32,6 +32,10 @@ header {
 
 /* Normal */
 @media only screen and (min-width: 48em) {
+  #container {
+    animation: background_fade_in 1s easein;
+  }
+  
   header nav {
     text-align: center;
     background-color: black; 
@@ -53,6 +57,13 @@ header {
     color: white;
     font-weight: none;
   }
+  
+  #nav_bar th a:hover {
+    animation: color_change_th 2s easein;
+    
+    -webkit-animation: color_change_th 2s easein;
+    -moz-animation: color_change_th 2s easein;
+  }
 
   #join_button {
     background-color: indianred;
@@ -68,6 +79,26 @@ header {
     bottom: 0.5%;
     left: 79%;  
   }
+  
+  /** Animation for Header **/
+  
+  @keyframes color_change_th {
+    from { color: white; }
+    to { color: gainsboro; }
+  }
+  
+  @-webkit-keyframes color_change_th {
+    from { color: white; }
+    to { color: gainsboro; }
+  }
+  
+  @-moz-keyframes color_change_th {
+    from { color: white; }
+    to { color: gainsboro; }
+  }
+  
+  /** Background Fade in **/
+  
   
   @keyframes background_fade_in {
     0% { opacity: 0; }
