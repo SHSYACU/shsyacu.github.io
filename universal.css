@@ -33,7 +33,7 @@ header {
 /* Normal */
 @media only screen and (min-width: 48em) {
   #container {
-    animation: background_fade_in 1s easein;
+    animation: background_fade_in 1s ease;
     animation-iteration-count: 1;
   }
   
@@ -60,10 +60,10 @@ header {
   }
   
   th a:hover {
-    animation: color_change_th 2s easein;
+    animation: color_change_th 2s ease;
     
-    -webkit-animation: color_change_th 2s easein;
-    -moz-animation: color_change_th 2s easein;
+    -webkit-animation: color_change_th 2s ease;
+    -moz-animation: color_change_th 2s ease;
   }
 
   #join_button {
@@ -78,12 +78,14 @@ header {
     color: white;
     position: absolute;
     bottom: 0.5%;
-    left: 79%;  
+    left: 79%; 
+  }
+  
+  #join_button:hover {
+    animation: color_change_th 2s ease;
     
-    animation: color_change_th 2s easein;
-    
-    -webkit-animation: color_change_th 2s easein;
-    -moz-animation: color_change_th 2s easein;
+    -webkit-animation: color_change_th 2s ease;
+    -moz-animation: color_change_th 2s ease;
   }
   
   /** Animation for Header **/
