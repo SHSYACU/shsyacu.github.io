@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  font-family: normalFont;
+  font-family: lightFont;
   background-color: rgb(29,67,110);
 }
 
@@ -11,6 +11,11 @@ body {
   text-align: center;
   margin: 0px auto;
   display: block;
+}
+
+#container {
+  color: white;
+  width: 100%;
 }
 
 #main img {
@@ -23,7 +28,7 @@ body {
 }
 
 #our_mission {
-  font-family: normalFont;
+  font-family: lightFont;
   font-weight: none;
   color: white;
   background-color: midnightblue;
