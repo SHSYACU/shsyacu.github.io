@@ -1,6 +1,6 @@
 body {
   font-family: normalFont;
-  background-color: midnightblue;
+  background-color: darkslategray;
   margin: 0px auto;
   text-align: center;
   padding: 0px;
@@ -59,7 +59,7 @@ header {
     font-weight: none;
   }
   
-  #nav_bar th a:hover {
+  th a:hover {
     animation: color_change_th 2s easein;
     
     -webkit-animation: color_change_th 2s easein;
@@ -79,23 +79,28 @@ header {
     position: absolute;
     bottom: 0.5%;
     left: 79%;  
+    
+    animation: color_change_th 2s easein;
+    
+    -webkit-animation: color_change_th 2s easein;
+    -moz-animation: color_change_th 2s easein;
   }
   
   /** Animation for Header **/
   
   @keyframes color_change_th {
-    from { color: white; }
-    to { color: gainsboro; }
+    from { opacity: 1; color: white; }
+    to { opacity: 0.7; color: gainsboro; }
   }
   
   @-webkit-keyframes color_change_th {
-    from { color: white; }
-    to { color: gainsboro; }
+    from { opacity: 1; color: white; }
+    to { opacity: 0.7; color: gainsboro; }
   }
   
   @-moz-keyframes color_change_th {
-    from { color: white; }
-    to { color: gainsboro; }
+    from { opacity: 1; color: white; }
+    to { opacity: 0.7; color: gainsboro; }
   }
   
   /** Background Fade in **/
