@@ -1,3 +1,9 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: normalFont;
+}
+
 #main {
   background-color: rgb(83, 133, 183);
   font-family: boldFont;
