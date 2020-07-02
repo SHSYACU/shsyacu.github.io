@@ -1,12 +1,11 @@
 body {
   margin: 0px;
   padding: 0px;
-  font-family: lightFont;
   background-color: rgb(29,67,110);
+  width: 100%;
 }
 
 #main {
-  background-color: rgb(29,67,110);
   font-family: boldFont;
   text-align: center;
   margin: 0px auto;
@@ -16,10 +15,17 @@ body {
 #container {
   color: white;
   width: 100%;
+  font-family: lightFont;
 }
 
 #main img {
-  padding: 0px; 
+  padding: 0px;
+  position: relative;
+  z-index: -3;
+}
+
+header {
+  z-index: 1;
 }
 
 #main h1 {
@@ -28,8 +34,7 @@ body {
 }
 
 #our_mission {
-  font-family: lightFont;
-  font-weight: none;
+  font-weight: normal;
   color: white;
   background-color: midnightblue;
   padding: 2%;
@@ -37,8 +42,15 @@ body {
 
 #about_us {
   color: white;
-  background-color: aliceblue;
+  background-color: rgb(29,67,110);
+  font-weight: normal;
   padding: 2%;
+}
+
+#contact_us {
+  background-color: indianred;
+  padding: 2%;
+  font-weight: normal;
 }
 
 .repeating_quote {

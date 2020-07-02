@@ -7,21 +7,21 @@
     <link rel="stylesheet" type="text/css" href="fonts.css" /> <!-- specifically for fonts -->
     <link rel="stylesheet" type="text/css" href="universal.css" /> <!-- universal (general) -->                                        
     <link rel="icon" type="image/png" href="multimedia/images/favicon.png" /> <!-- favicon 16x16 -->
+    <script type="text/javascript" src="dropdownScript.js" /> 
     <script type="text/javascript"></script> <!-- In case we decide to add dynamic elements -->
     <meta charset="utf-8" /> <!-- Don't forget, this page is going to be responsive, for media type 30em, 38em, 45em -->
   </head>
   <!-- Initialization ends -->
   <body>
     <header class="fixed">
+     <input type="checkbox" id="logo_btn" onclick="dropdownMenu();"/>
      <nav>
-       <table id="nav_bar">
-         <tr>
-           <th><a href="#main">Home</a></th>
-           <th><a href="#about_us">Our Chapter</a></th>
-           <th><a href="events">Events</a></th>
-           <th><a href="archive">Archive</a></th>     
-         </tr>
-       </table>
+       <ul id="nav_bar">
+         <li><a href="#main">Home</a></li>
+         <li><a href="#about_us">Our Chapter</a></li>
+         <li><a href="events/events.html">Events</a></li>
+         <li><a href="archive/archive.html">Archive</a></li>
+       </ul>
        <a href="recruitment" id="join_button"><b>Join Us</b></a>
      </nav>
     </header>
@@ -54,12 +54,11 @@
       </p>
       </section>
     <section id="contact_us">
-      <div class="somewhat_small_text">
+      <h2>CONTACT US</h2>
         <h4>Shoot us an email at shsyacu@gmail.com!</h4>
         <h4>Join the chapter discord server: <a href="https://discord.gg/CRK2jBN">Discord Server</a></h4>
         <h4>Involve yourself with the National Branch: <a href="yacu.org">Youth American Coalition for Unity</a></h4>
         <h4>Get email updates <a href="recruitment">here</a></h4>
-      </div>
     </section>
     <div class="repeating_quote"> <!-- temporary placeholder, CSS: repeatedly, one fades while the other one comes in -->
         <img src="multimedia/images/quote_1_1960x1080.png" id="bottom" class="quote" alt="quote1" title="quote1" width="100%">
