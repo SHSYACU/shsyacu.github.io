@@ -13,8 +13,9 @@
   </head>
   <!-- Initialization ends -->
   <body>
-    <header class="fixed">
-     <input type="checkbox" id="logo_btn" onclick="dropdownMenu();"/>
+    <div id="mobileContainer" class="fixed"></div>
+    <input type="checkbox" id="logo_btn" onclick="dropdownMenu();"/>
+    <header id="headed">
      <nav>
        <ul id="nav_bar">
          <li><a href="#main">Home</a></li>
@@ -54,11 +55,19 @@
       </p>
       </section>
     <section id="contact_us">
-      <h2>CONTACT US</h2>
-        <h4>Shoot us an email at shsyacu@gmail.com!</h4>
-        <h4>Join the chapter discord server: <a href="https://discord.gg/CRK2jBN">Discord Server</a></h4>
-        <h4>Involve yourself with the National Branch: <a href="yacu.org">Youth American Coalition for Unity</a></h4>
-        <h4>Get email updates <a href="recruitment">here</a></h4>
+      <h2 id="contact">CONTACT US</h2>
+      <aside id="one">
+        <h4><a href="mailto:shsyacu@gmail.com">Shoot Us An Email</a></h4>
+      </aside>
+      <aside id = "two">
+        <h4><a href="https://discord.gg/CRK2jBN">Join the <i>SHS YACU Discord</i></a></h4>
+      </aside>
+      <aside id = "three">
+         <h4><a href="yacu.org">Involve Yourself with the National Branch</a></h4>
+      </aside>
+      <aside id = "recruit">
+        <h4><a href="recruitment">Get Email Updates</a></h4>
+      </aside> 
     </section>
     <div class="repeating_quote"> <!-- temporary placeholder, CSS: repeatedly, one fades while the other one comes in -->
         <img src="multimedia/images/quote_1_1960x1080.png" id="bottom" class="quote" alt="quote1" title="quote1" width="100%">

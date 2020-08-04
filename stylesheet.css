@@ -30,7 +30,8 @@ header {
 
 #main h1 {
   color: white;
-  font-size: 400%
+  font-size: 400%;
+  padding: 0px;
 }
 
 #our_mission {
@@ -77,6 +78,7 @@ header {
   100% { opacity: 0; }
 }
 
+
 /* For different media queries */
 
 /* Mobile */
@@ -86,7 +88,31 @@ header {
 
 /* Tablet (iPad Mini, e.g) */
 @media only screen and (min-width: 40em) {
+  aside {
+    z-index: 7;
+    margin: 0px auto;
+    display: inline-block;
+    padding: 2%;
+  }
   
+  #one, #two, #three {
+      border-right: 1px solid white;
+  }
+  
+  aside h4 a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  aside h4 {
+    text-transform: uppercase;
+  }
+  
+  #contact {
+    opacity: 0.3;
+    position: absolute;
+    margin: auto;
+  }
 }
 
 /* Normal */

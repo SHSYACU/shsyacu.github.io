@@ -3,40 +3,93 @@ body {
   margin: 0;
   text-align: center;
   padding: 0px;
-  padding-left: 0.2%;
-  padding-right: 0.2%;
   background-color: rgb(29,67,110);
   width: 100%;
 }
 
 /* Header */
-.fixed {
-  position: fixed;
-}
-
 header {
   width: 100%;
-  margin: 0;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+section {
+  width: 100%;
+  height: 100%;
 }
 
 /* For different media queries */
 
 /* Mobile */
-@media only screen and (min-width: 30em) {
-  #nav_bar, #join_button {
-    display: none;
+@media only screen and (max-width: 39.999999em) {
+  .mobileAnimClass {
+    animation: background_color_grad 50s ease;
+    animation-iteration-count: 1;
+    z-index: 5;
   }
   
-  #nav_bar ul li {
+  #container {
+    background-color: transparent;
+  }
+  
+  #nav_bar, #join_button {
+    display: none;
     list-style-type: none;
-    text-align: center;
-    background-color: black; 
+  }
+
+  #mobileContainer {
+    padding: 3%;
+    padding-bottom: 6%;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    order: 2;
+  }
+  
+  header {
+    width: 80%;
+    position: absolute;
+    left: 20%;
+    height: 100%;
     opacity: 0.9;
+    margin-top: 3%;
+  }
+
+  #headed {
+    background-color: transparent;
+    position: fixed;
+    z-index: 9;
+    margin-top: 9%;
+  }
+  
+  #nav_bar li {
+    text-align: center;
+    padding: 10% 10% 0% 0%;
+    font-family: lightFont;
+  }
+  
+  #nav_bar li a, #join_button {
+    text-decoration: none; 
+    color: black;
+    font-weight: none;
+    font-size: 150%;
+  }
+  
+  #nav_bar li a:active {
+    color: gainsboro;
   }
   
   #logo_btn {
+    margin-top: 3%;
     margin-left: 40%;
     position: fixed;
+    z-index: 10;
+  }
+  
+  @keyframes background_color_grad {
+    0% { background-color: transparent; }
+    1% { background-color: rgb(0, 0, 0, 0.5); }
   }
 }
 
@@ -81,6 +134,8 @@ header {
   
   #nav_bar li {
     list-style-type: none;
+    display: inline;
+    padding: 0% 0% 5% 5%;
   }
   
   #nav_bar li a {
@@ -110,7 +165,7 @@ header {
     bottom: 0.5%;
     left: 79%; 
   }
-  
+
   #join_button:hover {
     animation: color_change_th 2s ease;
     
