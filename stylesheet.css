@@ -34,32 +34,31 @@ header {
   padding: 0px;
 }
 
+section:not(first-child) {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
 #our_mission {
   font-weight: normal;
   color: white;
   background-color: midnightblue;
-  padding: 2%;
 }
 
 #about_us {
   color: white;
   background-color: rgb(29,67,110);
   font-weight: normal;
-  padding: 2%;
 }
 
 #contact_us {
   background-color: indianred;
-  padding: 2%;
   font-weight: normal;
 }
 
 .repeating_quote {
   position: relative;
-  height: 100%;
-  width: 100%;
   margin: 0px auto;
-  background-color: midnightblue;
 }
 
 .repeating_quote img {
@@ -67,6 +66,12 @@ header {
   left: 0;
 }
 
+#repeated {
+  background-color: rgb(26,50,87);
+  width: 100%;
+  position: absolute;
+}
+  
 #top {
   animation: rotating_quote 10s ease-in-out alternate infinite;
 }
@@ -82,8 +87,11 @@ header {
 /* For different media queries */
 
 /* Mobile */
-@media only screen and (min-width: 30em) {
-  
+@media only screen and (max-width: 39.999999em) {
+   .repeating_quote {
+    height: 90%;
+    width: 90%;
+  }
 }
 
 /* Tablet (iPad Mini, e.g) */
@@ -102,6 +110,13 @@ header {
   aside h4 a {
     color: white;
     text-decoration: none;
+    font-size: normal;
+  }
+  
+  aside h4 a:hover {
+    transform: font-size 0.1s, color 0.1s;
+    font-size: large;
+    color: gainsboro;
   }
   
   aside h4 {
@@ -112,6 +127,11 @@ header {
     opacity: 0.3;
     position: absolute;
     margin: auto;
+  }
+
+  .repeating_quote {
+    height: 60%;
+    width: 60%;
   }
 }
 
