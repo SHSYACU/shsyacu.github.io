@@ -14,8 +14,9 @@
   </head>
   <!-- Initialization ends -->
   <body>
-    <div id="mobileContainer" class="fixed"></div>
-    <input type="checkbox" id="logo_btn" onclick="dropdownMenu();"/>
+    <div id="mobileContainer" class="fixed">
+    </div>
+    <input type="checkbox" id="logo_btn" onclick="dropdownMenu();"/><label for="logo_btn"></label>
     <header id="headed">
      <nav>
        <ul id="nav_bar">
@@ -24,7 +25,7 @@
          <li><a href="events/events.html">Events</a></li>
          <li><a href="archive/archive.html">Archive</a></li>
        </ul>
-       <a href="recruitment" id="join_button"><b>Join Us</b></a>
+       <a href="recruitment/recruitment.html" id="join_button"><b>Join Us</b></a>
      </nav>
     </header>
     <!-- Main Setup -->
@@ -70,14 +71,13 @@
         <h4><a href="recruitment">Get Email Updates</a></h4>
       </aside> 
     </section>
-    <div class="repeating_quote"> <!-- temporary placeholder, CSS: repeatedly, one fades while the other one comes in -->
+    <section id="repeated">
+      <div class="repeating_quote"> <!-- temporary placeholder, CSS: repeatedly, one fades while the other one comes in -->
         <img src="multimedia/images/quote_1_1960x1080.png" id="bottom" class="quote" alt="quote1" title="quote1" width="100%">
         <img src="multimedia/images/quote_2_1960x1080.png" id="top" class="quote" alt="quote2" title="quote2" width="100%">
+      </div>
+    </section>
     </div>
-    </div>
-    <footer>
-      <p><small>© 2020 Young Americans Coalition for Unity</small></p>
-    </footer>
   </body>
 </html>
       
