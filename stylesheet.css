@@ -98,6 +98,7 @@ section:not(first-child) {
     padding: 1%;
     margin: 0px auto;
     border-radius: 5px;
+    z-index: 1000;
   }
 }
 
