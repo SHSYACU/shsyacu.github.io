@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   margin: 0px;
   padding: 0px;
@@ -150,3 +151,147 @@ section:not(first-child) {
   }
 }
 
+=======
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(29,67,110);
+  width: 100%;
+}
+
+#main {
+  font-family: boldFont;
+  text-align: center;
+  margin: 0px auto;
+  display: block;
+}
+
+#container {
+  color: white;
+  width: 100%;
+  font-family: lightFont;
+}
+
+#main img {
+  padding: 0px;
+  position: relative;
+  z-index: -3;
+}
+
+header {
+  z-index: 1;
+}
+
+#main h1 {
+  color: white;
+  font-size: 400%;
+  padding: 0px;
+}
+
+section:not(first-child) {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+#our_mission {
+  font-weight: normal;
+  color: white;
+  background-color: midnightblue;
+}
+
+#about_us {
+  color: white;
+  background-color: rgb(29,67,110);
+  font-weight: normal;
+}
+
+#contact_us {
+  background-color: indianred;
+  font-weight: normal;
+}
+
+.repeating_quote {
+  position: relative;
+  margin: 0px auto;
+}
+
+.repeating_quote img {
+  position: absolute;
+  left: 0;
+}
+
+#repeated {
+  background-color: rgb(26,50,87);
+  width: 100%;
+  position: absolute;
+}
+  
+#top {
+  animation: rotating_quote 10s ease-in-out alternate infinite;
+}
+
+@keyframes rotating_quote {
+  0% { opacity: 1; }
+  45% { opacity: 1; }
+  55% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+
+/* For different media queries */
+
+/* Mobile */
+@media only screen and (max-width: 39.999999em) {
+   .repeating_quote {
+    height: 90%;
+    width: 90%;
+  }
+}
+
+/* Tablet (iPad Mini, e.g) */
+@media only screen and (min-width: 40em) {
+  aside {
+    z-index: 7;
+    margin: 0px auto;
+    display: inline-block;
+    padding: 2%;
+  }
+  
+  #one, #two, #three {
+      border-right: 1px solid white;
+  }
+  
+  aside h4 a {
+    color: white;
+    text-decoration: none;
+    font-size: normal;
+  }
+  
+  aside h4 a:hover {
+    transform: font-size 0.1s, color 0.1s;
+    font-size: large;
+    color: gainsboro;
+  }
+  
+  aside h4 {
+    text-transform: uppercase;
+  }
+  
+  #contact {
+    opacity: 0.3;
+    position: absolute;
+    margin: auto;
+  }
+
+  .repeating_quote {
+    height: 60%;
+    width: 60%;
+  }
+}
+
+/* Normal */
+@media only screen and (min-width: 48em) {
+  
+}
+
+>>>>>>> 3f84e2955908dca48b346eea2280b45d6ea40740
