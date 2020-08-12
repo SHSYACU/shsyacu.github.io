@@ -47,7 +47,7 @@ section {
     background-color: black;
     width: 100%;
     position: fixed;
-    order: 2;
+    z-index: 15;
   }
   
   header {
@@ -101,13 +101,7 @@ section {
     content: url("multimedia/images/x.png");
     animation: spin 0.2s ease;
   }
-  
-  aside h4 a {
-    color: white;
-    text-decoration: none;
-    font-weight: normal;
-  }
-  
+
   @keyframes background_color_grad {
     0% { background-color: transparent; }
     1% { background-color: rgb(0, 0, 0, 0.5); }
