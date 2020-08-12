@@ -23,17 +23,9 @@ section {
   z-index: 500;
 }
 
-footer {
-  width: 100%;
-  background-color: darkslateblue;
-  position: absolute;
-  bottom: 0px;
-}
-
-/* For different media queries */
-
 /* Mobile */
-@media only screen and (max-width: 39.999999em) {
+
+@media only screen and (max-width: 39.9999999999em) {
   .mobileAnimClass {
     animation: background_color_grad 50s ease;
     animation-iteration-count: 1;
@@ -51,7 +43,7 @@ footer {
 
   #mobileContainer {
     padding: 3%;
-    padding-bottom: 6.6%;
+    padding-bottom: 10%;
     background-color: black;
     width: 100%;
     position: fixed;
@@ -71,7 +63,7 @@ footer {
     background-color: transparent;
     position: fixed;
     z-index: 9;
-    margin-top: 9.2%;
+    margin-top: 12%;
   }
   
   #nav_bar li {
@@ -102,12 +94,18 @@ footer {
     z-index: 100;
     content: url("multimedia/images/logobtn.png");
     height: 5%;
-    width: 5.1%;
+    width: 5.5%;
   }
   
   #logo_btn:checked + label {
     content: url("multimedia/images/x.png");
     animation: spin 0.2s ease;
+  }
+  
+  aside h4 a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
   }
   
   @keyframes background_color_grad {
@@ -126,13 +124,86 @@ footer {
   }
 }
 
-/* Tablet (iPad Mini, e.g) */
-@media only screen and (min-width: 40em) {
+/* Tablet, mostly duplicated */
+@media only screen and (min-width: 40em) and (max-width: 49.999999em) {
+  #container {
+    background-color: transparent;
+  }
   
+  #nav_bar, #join_button {
+    display: none;
+    list-style-type: none;
+  }
+
+  #mobileContainer {
+    padding: 3%;
+    padding-bottom: 6.5%;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    order: 2;
+  }
+  
+  header {
+    width: 80%;
+    position: absolute;
+    left: 20%;
+    height: 100%;
+    opacity: 0.9;
+    margin-top: 3%;
+  }
+
+  #headed {
+    background-color: transparent;
+    position: fixed;
+    z-index: 9;
+    margin-top: 9.5%;
+  }
+  
+  #nav_bar li {
+    text-align: center;
+    padding: 10% 10% 0% 0%;
+    font-family: lightFont;
+  }
+  
+  #nav_bar li a, #join_button {
+    text-decoration: none; 
+    color: black;
+    font-weight: none;
+    font-size: 150%;
+  }
+  
+  #nav_bar li a:active {
+    color: gainsboro;
+  }
+  
+  #logo_btn {
+    display: none;
+  }
+  
+  #logo_btn + label {
+    margin-top: 2.1%;
+    margin-left: 40%;
+    position: fixed;
+    z-index: 100;
+    content: url("multimedia/images/logobtn.png");
+    height: 5%;
+    width: 5.5%;
+  }
+  
+  #logo_btn:checked + label {
+    content: url("multimedia/images/x.png");
+  }
+  
+  aside h4 a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+  }
 }
 
 /* Normal */
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 50em) {
   #container {
     animation: background_fade_in 1s ease;
     animation-iteration-count: 1;

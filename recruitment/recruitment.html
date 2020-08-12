@@ -34,14 +34,11 @@
         <fieldset>
           <legend>Join the SHS YACU Chapter!</legend>
           <br>
-          <input type="text" placeholder="FIRST NAME" name="fn" required class="under_line"/>
+          <input type="text" placeholder="First Name" id="fn" name="fn" required class="under_line"/>
+          <input type="text" placeholder="Last Name" id="ln" name="ln" required class="under_line"/>
           <br>
-          <input type="text" placeholder="LAST NAME" name="ln" required class="under_line"/>
-          <br>
-          <input type="text" placeholder="EMAIL" name="_replyto" required class="under_line" />
-          <br>
-          Grade: 
-          <select name="Grade" size="1" id="grade" required>
+          <input type="text" id="email" placeholder="Email" name="_replyto" required class="under_line" />
+          Grade: <select name="Grade" size="1" class="grade" required>
             <option value="Below">5 or Below</option>
             <option value="6">6</option>
             <option value="7">7</option>
@@ -53,12 +50,12 @@
             <option value="College">College</option>
           </select>
           <br>
-          Anything else?
-          <textarea name="message" placeholder="message"></textarea>
+          <br>
+          <textarea name="message" placeholder="Anything else?"></textarea>
           <div id="containerform">
-            <input type="submit" value="Send"> 
+            <input type="reset" value="Reset">
             &nbsp; &nbsp;
-            <input type="reset" value="RESET">
+            <input type="submit" value="Send"> 
           </div>
         </fieldset>
       </form>
