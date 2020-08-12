@@ -72,6 +72,12 @@ section:not(first-child) {
   position: absolute;
 }
   
+aside h4 a {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+}
+  
 #top {
   animation: rotating_quote 10s ease-in-out alternate infinite;
 }
@@ -82,7 +88,6 @@ section:not(first-child) {
   55% { opacity: 0; }
   100% { opacity: 0; }
 }
-
 
 /* For different media queries */
 
@@ -98,9 +103,11 @@ section:not(first-child) {
     padding: 1%;
     margin: 0px auto;
     border-radius: 5px;
-    z-index: 1000;
+    position: relative;
+    z-index: 10;
   }
 }
+   
 
 /* Tablet (iPad Mini, e.g) */
 @media only screen and (min-width: 40em) {
@@ -120,6 +127,7 @@ section:not(first-child) {
     text-decoration: none;
     font-size: normal;
     background-color: transparent;
+    z-index: 4;
   }
   
   aside h4 a:hover {
