@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="../fonts.css" /> <!-- specifically for fonts -->
     <link rel="stylesheet" type="text/css" href="../universal.css" /> <!-- universal (general) -->                                        
     <link rel="icon" type="image/png" href="multimedia/images/favicon.png" /> <!-- favicon 16x16 -->
-    <script type="text/javascript" src="dropdownScript.js" /> 
+    <script type="text/javascript" src="../dropdownScript.js" /> 
     <meta charset="utf-8" /> <!-- Don't forget, this page is going to be responsive, for media type 30em, 38em, 45em -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript">
@@ -23,15 +23,18 @@
   </head>
   <!-- Initialization ends -->
   <body>
-    <header class="fixed">
+    <div id="mobileContainer" class="fixed">
+    </div>
+    <input type="checkbox" id="logo_btn" onclick="dropdownMenu();"/><label for="logo_btn"></label>
+    <header id="headed">
      <nav>
        <ul id="nav_bar">
          <li><a href="../index.html#main">Home</a></li>
          <li><a href="../index.html#about_us">Our Chapter</a></li>
-         <li><a href="../events/events.html">Events</a></li>
-         <li><a href="../archive/archive.html">Archive</a></li>
-         <li><a href="../recruitment/recruitment.html"><b>Join Us</b></a></li>
+         <li><a href="events/events.html">Events</a></li>
+         <li><a href="archive/archive.html">Archive</a></li>
        </ul>
+       <a href="recruitment/recruitment.html" id="join_button"><b>Join Us</b></a>
      </nav>
     </header>
     <div id="parent">
